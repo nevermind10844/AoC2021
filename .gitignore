@@ -1,0 +1,7 @@
+﻿.metadata/*
+*/.settings
+*/bin
+*/.classpath
+*/.project
+/.metadata/
+aoc_common.jar
