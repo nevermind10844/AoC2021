@@ -3,10 +3,12 @@ public class Submarine {
 
 	private int distance;
 	private int depth;
+	private int aim;
 
 	public Submarine() {
 		this.distance = 0;
 		this.depth = 0;
+		this.aim = 0;
 	}
 
 	public int getDistance() {
@@ -19,14 +21,15 @@ public class Submarine {
 
 	public void goForward(int meters) {
 		this.distance += meters;
+		this.depth += this.aim*meters;
 	}
 
 	public void goUp(int meters) {
-		this.depth -= meters;
+		this.aim -= meters;
 	}
 
 	public void goDown(int meters) {
-		this.depth += meters;
+		this.aim += meters;
 	}
 
 	@Override
